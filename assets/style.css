@@ -1,0 +1,235 @@
+* {box-sizing: border-box;}
+
+body{background-image:url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png"); 
+    background-color:rgb(147, 159, 170);
+height:100%;}
+
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -40px;
+}
+
+h2, h3{color:#4aaaa5;
+font-family: Georgia, 'Times New Roman', Times, serif;}
+
+p{font-family:Arial, Helvetica, sans-serif;
+font-size: 16px;}
+
+a:hover{
+    color:#4aaaa5;
+}
+
+.header-wrapper {
+background-color: #fff;
+width: 100%;
+margin: 0;
+border-bottom: 1px solid #ccc;
+overflow: hidden;
+
+}
+
+.headercontents{
+    width: 960px;
+    margin: 0 auto 0 auto;
+   position: relative;
+   overflow: hidden;
+   
+    }
+
+.topnav {position: absolute;
+    bottom:20;
+    right: 1;
+ text-align: center;
+ overflow: hidden;
+}
+
+.topnav a{text-decoration: none;
+text-align:center;
+padding:10px;
+background-color: #fff}
+
+.nameplate{
+ background-color: #0F1440;
+ color:white;
+ padding: 20;
+ text-align: left;
+ width: 280px;
+ overflow: hidden;
+
+
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
+.contents{width:960px;
+margin: auto;}
+
+.bio {width: 610px;
+margin-top: 25px;
+margin-right: 25px;
+padding: 10px 20px 10px 20px;
+background-color: #fff;
+float: left;
+border: 1px solid #ccc; }
+
+.clearfix::after{
+    content:"";
+    clear:both;
+    display:table;
+}
+.bio img{float:left;
+margin-left: 10px;
+padding: 20px;
+clear: left;}
+
+.bio p{
+    margin:10px;
+    padding:20px 10px 30px 5px;
+}
+.projects {width: 610px;
+    margin-top: 25px;
+    margin-right:25px;
+    padding: 10px 20px 10px 20px;
+    background-color: #fff;
+    float: left; 
+    border: 1px solid #ccc;}
+
+.clearfix::after{
+        content:"";
+        clear:both;
+        display:table;}
+
+.projects h2{
+    color:#4aaaa5;
+    margin-left: 10px;
+    
+}
+.projects img{
+    width:200px;
+    overflow: hidden;
+    margin:10px;
+
+}
+
+.image{
+    position:relative;
+    width:200px;
+    margin:15px;
+    float: left;
+}
+.image h4{
+    position:absolute;
+    left:10;
+    bottom:10;
+    width:100%;
+    background-color: #4aaaa5;
+    padding: 10px;
+    color:white;
+    text-align: center;
+    font-size:16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    width: 100%;
+    padding:10px;
+    border-radius: 4px;
+    border-color:#ccc;
+}
+
+textarea{
+    width: 100%;
+    height:150px;
+    padding:10px;
+    border-radius:4px;
+    border-color: #ccc;
+    
+}
+input[type=submit]{
+    width: 75px;
+    background-color: #4aaaa5;
+    border:none;
+    color:white;
+    padding:20px;}
+
+input[type=submit]:hover{
+    background-color: #0F1440;
+}
+
+
+.connect{ width: 270px;
+float: left;
+margin: 30px 0px 0px 50px;
+background-color: #fff;
+padding: 15px;
+border: 1px solid #ccc;}
+
+.wrapper::after{
+    content:"";
+    display:block;
+}
+.footer, wrapper::after{
+    height: 40px;
+}
+
+.footer{
+clear: both;
+padding:10px;
+background-color:#0F1440;
+text-align: center;
+color: white;
+border-top: 5px solid #4aaaa5;
+width: 100%;
+}
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 980px) {
+    .bio img {
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bio{width:750px;
+        margin-right:0; }
+    .connect{width: 750px;
+    margin-left: auto;}
+    .headercontents {width:750px;}
+
+    .projects{width:750px;
+    padding-left:5px;}
+    .image{width:300px;
+        margin-left: 10px;}
+    .projects img{width:300px;
+        margin-left:10px;}
+    
+
+}
+
+@media screen and (max-width: 640px){
+    .bio{width:625px;}
+    .connect{width:625px;}
+    .headercontents{ width:625px;}
+   .projects{width:625px;
+    padding-left:5px;}
+    .image{width: 500px;}
+    .projects img{width: 500px;}
+    .nameplate{
+    width: 100%;
+    text-align:center;
+    top:-10;}
+    
+    .topnav{
+    width:100%;
+    bottom:0
+    }  
+    
+    
+}
